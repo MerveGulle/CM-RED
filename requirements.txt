@@ -1,5 +1,4 @@
 einops==0.8.0
-#flash-attn==0.2.8
 numpy==1.24.4
 torch
 torchvision
@@ -9,3 +8,5 @@ pillow
 pyYaml
 pandas
 scipy
+scikit-image
+sigpy
