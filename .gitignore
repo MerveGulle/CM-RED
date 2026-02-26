@@ -1,0 +1,22 @@
+# python
+__pycache__/
+*.pyc
+
+# environments
+.env
+.venv
+conda-env/
+
+# data
+data/
+*.h5
+*.nii
+*.nii.gz
+
+# checkpoints
+checkpoints/
+*.pt
+*.ckpt
+
+# system
+.DS_Store
