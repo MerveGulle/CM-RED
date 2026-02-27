@@ -20,3 +20,6 @@ checkpoints/
 
 # system
 .DS_Store
+
+# Ignore generated sample images
+exp/image_samples/
