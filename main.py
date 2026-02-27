@@ -18,7 +18,7 @@ def parse_args_and_config():
     # General Setting
     parser.add_argument("--config", type=str, default='fast_mri_320.yml', help="Path to the config file")
     parser.add_argument("--seed", type=int, default=1234, help="Set different seeds for diverse results")
-    parser.add_argument("--device_ids", type=int, default=3, help="cuda=?")
+    parser.add_argument("--device_ids", type=int, default=0, help="cuda=?")
 
     # Model
     parser.add_argument("--model_ckpt", type=str, default='fast_mri/ema_0.9999432189950708_700000_cm_knee.pt', help="Name of the model checkpoint") # e.g.,  "fast_mri/ema_0.9999432189950708_1050000_cm_brain.pt"
@@ -31,7 +31,7 @@ def parse_args_and_config():
     parser.add_argument("--verbose", type=str, default="info", help="Verbose level: info | debug | warning | critical")
     parser.add_argument("--ni", action="store_false", help="No interaction. Suitable for Slurm Job launcher")
 
-    # Method
+    # Degredation
     parser.add_argument("--deg", type=str, default='fast_mri')
     
     # Data
@@ -49,8 +49,8 @@ def parse_args_and_config():
     parser.add_argument("--deltas", type=str, default="", help="A comma separated list of the delta hyperparameters, sigma_cm[n]=sigma[n]*(1+delta[n])")
     parser.add_argument("--kappas", type=str, default="", help="A comma separated list of the kappa hyperparameters, CM out scale parameters")
     parser.add_argument("--rho", type=float, default=-2.0, help="Rho (penalty) hyperparameter")
-    parser.add_argument("--cg_iter", type=int, default=10, help="Number of iterations used in CG sense")
-    parser.add_argument("--mu", type=float, default=0.9, help="Mu (initial momentum) hyperparameter")    
+    parser.add_argument("--mu", type=float, default=0.9, help="Mu (initial momentum) hyperparameter") 
+    parser.add_argument("--cg_iter", type=int, default=10, help="Number of iterations used in CG sense")   
     
     
     args = parser.parse_args()

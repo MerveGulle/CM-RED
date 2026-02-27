@@ -1,0 +1,31 @@
+INFO - main.py - 2026-02-26 17:05:01,304 - Argument acc_rate: 8
+INFO - main.py - 2026-02-26 17:05:01,304 - Argument acs_lines: 24
+INFO - main.py - 2026-02-26 17:05:01,305 - Argument cg_iter: 10
+INFO - main.py - 2026-02-26 17:05:01,331 - Argument config: 'fast_mri_320.yml'
+INFO - main.py - 2026-02-26 17:05:01,331 - Argument data_type: 'AXT1PRE'
+INFO - main.py - 2026-02-26 17:05:01,331 - Argument deg: 'fast_mri'
+INFO - main.py - 2026-02-26 17:05:01,331 - Argument deltas: '0.5,7.0,6.0,3.5'
+INFO - main.py - 2026-02-26 17:05:01,331 - Argument device_ids: 0
+INFO - main.py - 2026-02-26 17:05:01,331 - Argument exp: 'exp'
+INFO - main.py - 2026-02-26 17:05:01,331 - Argument gamma: 0.1
+INFO - main.py - 2026-02-26 17:05:01,332 - Argument iN: 50
+INFO - main.py - 2026-02-26 17:05:01,332 - Argument image_folder: 'exp/image_samples/AXT1PRE-ACC_8-equidistant-iN_50-gamma_0.1-deltas_0.5,7.0,6.0,3.5-kappas_1.0,2.5-rho_-3.0-mu_0.2-cg_10-expname'
+INFO - main.py - 2026-02-26 17:05:01,332 - Argument kappas: '1.0,2.5'
+INFO - main.py - 2026-02-26 17:05:01,332 - Argument model_ckpt: 'fast_mri/ema_0.9999432189950708_1050000_cm_brain.pt'
+INFO - main.py - 2026-02-26 17:05:01,332 - Argument mu: 0.2
+INFO - main.py - 2026-02-26 17:05:01,332 - Argument ni: True
+INFO - main.py - 2026-02-26 17:05:01,332 - Argument pattern: 'equidistant'
+INFO - main.py - 2026-02-26 17:05:01,332 - Argument rho: -3.0
+INFO - main.py - 2026-02-26 17:05:01,333 - Argument save_observed_img: True
+INFO - main.py - 2026-02-26 17:05:01,333 - Argument seed: 1234
+INFO - main.py - 2026-02-26 17:05:01,333 - Argument subset_end: -1
+INFO - main.py - 2026-02-26 17:05:01,333 - Argument subset_start: -1
+INFO - main.py - 2026-02-26 17:05:01,333 - Argument verbose: 'info'
+INFO - main.py - 2026-02-26 17:05:02,003 - Using device: cuda:0
+INFO - diffusion_cm_red.py - 2026-02-26 17:05:26,916 - ----------------------------------------------
+INFO - diffusion_cm_red.py - 2026-02-26 17:05:52,084 - file_brain_Ax_T1PRE_200_6002233_002, PSNR: 36.84 -- SSIM: 0.929
+INFO - diffusion_cm_red.py - 2026-02-26 17:05:52,147 - ----------------------------------------------
+INFO - diffusion_cm_red.py - 2026-02-26 17:05:52,147 - DATABASE REULST:
+INFO - diffusion_cm_red.py - 2026-02-26 17:05:52,148 - Avg. PSNR (mean ± std): 36.84 ± 0.00
+INFO - diffusion_cm_red.py - 2026-02-26 17:05:52,149 - Avg. SSIM (mean ± std): 0.929 ± 0.000
+INFO - diffusion_cm_red.py - 2026-02-26 17:05:52,149 - ----------------------------------------------
