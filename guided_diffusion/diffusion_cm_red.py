@@ -11,7 +11,6 @@ from datasets import get_dataset
 from guided_diffusion.script_util import create_model
 from skimage.metrics import structural_similarity
 
-loss_fn_mse = torch.nn.MSELoss()
 
 def get_beta_schedule(beta_schedule, *, beta_start, beta_end, num_diffusion_timesteps):
     def sigmoid(x):
@@ -82,7 +81,7 @@ class CM_RED_Diffusion(object):
         model.eval()
         model = torch.nn.DataParallel(model, device_ids=[self.args.device_ids])
 
-        print('Running Testing with Database Trained Coefficients.',
+        print('Running CM-RED.',
               f'Dataset: {self.config.data.dataset}',
               f'Task: {self.args.deg}.',
               )
