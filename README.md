@@ -20,7 +20,7 @@ git clone https://github.com/MerveGulle/CM-RED.git
 ### 2. Create Conda Environment and Install Requirements
 
 ```bash
-conda env create -f -n {env_name} python=3.12
+conda env create -n {env_name} python=3.12
 conda activate {env_name}
 
 cd CM-RED
